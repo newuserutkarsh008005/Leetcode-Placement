@@ -14,7 +14,7 @@ Tree * insert(vector<int>& arr, int i){
     node->right=insert(arr,2*i+2);
     return node;
 }
-
+  
 int longestpath(Tree *node,int  & dia){
     if(node==nullptr)return 0;
     int lh=max(0,longestpath(node->left,dia));
@@ -23,7 +23,7 @@ int longestpath(Tree *node,int  & dia){
     return node->val+ max(lh,rh);
 }
 int main(){
-     vector<int>arr={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30};
+     vector<int>arr={123451,123452,123453,123454,123455,123456,123457,123458,123459,1123450,1123451,1123452,1123453,1123454,1123455,1123456,1123457,1123458,1123459,2123450,2123451,2123452,2123453,2123454,2123455,2123456,2123457,2123458,2123459,3123450};
 Tree * root=insert(arr,0);
 int dia=0;
 longestpath(root,dia);
