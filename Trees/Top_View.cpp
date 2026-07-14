@@ -33,6 +33,7 @@ vector<int>topView(Tree * root){
         if(node->left)q.push({node->left,x-1});
          if(node->right)q.push({node->right,x+1});
    }
+   
    //
    vector<int>ans;
    for(auto & it:mp){
