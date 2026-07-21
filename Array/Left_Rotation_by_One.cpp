@@ -17,6 +17,7 @@ void brute(vector<int>& arr) {
 // --------------------------------------------------
 // Optimal
 // --------------------------------------------------
+
 void optimal(vector<int>& arr) {
 int temp=arr[0];
     for(int i=1;i<arr.size();i++){
